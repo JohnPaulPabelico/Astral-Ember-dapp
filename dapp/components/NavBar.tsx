@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
@@ -7,12 +7,24 @@ import { GrClose } from "react-icons/gr";
 
 const NavBar: React.FC = () => {
   const [barState, setBarState] = useState(false);
+  const [isTop, setIsTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsTop(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div
-      className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 transition  py-3 ${
+      className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 transition py-3 ${
         barState ? "bg-slate-950" : "bg-slate-950/70"
-      }`}
+      } ${isTop ? "" : "backdrop-blur-lg"}`}
     >
       <div>
         <Image
