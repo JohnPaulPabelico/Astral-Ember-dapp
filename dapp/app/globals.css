@@ -5,3 +5,7 @@
 .space {
   font-family: var(--font-space-grotesk);
 }
+
+html {
+  scroll-behavior: smooth;
+}
