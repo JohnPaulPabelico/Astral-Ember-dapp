@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.space {
+  font-family: var(--font-space-grotesk);
+}
