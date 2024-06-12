@@ -10,24 +10,28 @@ const NavBar: React.FC = () => {
 
   return (
     <div
-      className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 transition bg-slate-950/70 py-3`}
+      className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 transition  py-3 ${
+        barState ? "bg-slate-950" : "bg-slate-950/70"
+      }`}
     >
       <div>
         <Image
           src="/logos.png"
           alt="logo"
-          width={80}
-          height={80}
+          width={60}
+          height={60}
           className="ml-10 rounded-full"
         />
       </div>
       <div>
-        <span className="ml-5 text-3xl text-white font-bold space">
+        <span className="ml-5 text-3xl text-white font-bold space  lg:visible invisible">
           Astral Ember Guild
         </span>
       </div>
       <div
-        className={`transition ease-out lg:ml-auto lg:static absolute  lg:min-h-fit min-h-screen lg:w-auto w-full top-[100%] left-0 py-10 lg:py-0`}
+        className={`transition ease-out lg:ml-auto lg:static absolute  lg:min-h-fit min-h-screen lg:w-auto w-full top-[100%] left-0 py-10 lg:py-0  ${
+          barState ? "bg-slate-950" : "bg-transparent"
+        }`}
       >
         <ul
           className={`flex-col lg:flex-row flex items-center gap-16 lg:gap-0`}
@@ -82,8 +86,10 @@ const NavBar: React.FC = () => {
           </li>
           <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
-              className={`ml-5 lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:scale-50 text-white transition duration-200 px-5 py-1 bg-purple-500`}
-              href="#join"
+              className={`ml-5 lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:scale-50 text-white transition duration-200 px-5 py-1 hover:bg-purple-700 bg-purple-500 lg:mr-10`}
+              href="https://discord.gg/astralember"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => {
                 setBarState(false);
                 console.log(barState);
@@ -97,7 +103,7 @@ const NavBar: React.FC = () => {
       <div className="">
         <ul className="flex items-center">
           <li
-            className={`ml-5 m-3 text-2xl cursor-pointer hover:text-blue-500 transition duration-200 lg:hidden
+            className={`ml-5 m-3 text-2xl cursor-pointer hover:text-slate-200 text-white transition duration-200 lg:hidden
               `}
           >
             {barState ? (
