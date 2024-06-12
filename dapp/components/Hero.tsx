@@ -4,6 +4,7 @@ import { IoLogoGithub, IoIosContact } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import React, { useContext } from "react";
 import Background from "../public/bg.png";
+import { Reveal } from "./Animations/Reveal";
 
 function Hero() {
   return (
@@ -38,7 +39,7 @@ function Hero() {
             <div className="lg:max-w-lg "></div>
             <span className="flex justify-center text-4xl mt-8">
               <Link
-                href="https://github.com/JohnPaulPabelico"
+                href="https://discord.gg/astralember"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:bg-purple-700 p-5 rounded-full bg-purple-600 text-white transition duration-300 space "
