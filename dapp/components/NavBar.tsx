@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
     <div
       className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 transition py-3 ${
         barState ? "bg-slate-950" : "bg-slate-950/70"
-      } ${isTop ? "" : "backdrop-blur-lg"}`}
+      } ${isTop ? "" : "backdrop-blur-sm"}`}
     >
       <div>
         <Image
