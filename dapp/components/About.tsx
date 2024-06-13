@@ -8,7 +8,7 @@ function About() {
     <div>
       {" "}
       <section id="about" className={`transition min-h-dvh bg-slate-900`}>
-        <div className="p-12"></div>
+        <div className="p-20"></div>
         <div className="flex justify-center  items-center h-full">
           <div className="text-center text-5xl space font-bold space flex justify-center text-white items-center">
             ABOUT THE GUILD
@@ -38,16 +38,26 @@ function About() {
         <div className="mt-10 flex justify-center  items-center">
           <ul className="flex justify-center gap-10">
             <li>
-              <SiSolana size={70} className="text-white" />
+              <SiSolana
+                size={70}
+                className="text-white  hover:text-purple-500 hover:scale-125 transition ease-in-out duration-100"
+              />
             </li>
             <li>
-              <SiEthereum size={70} className="text-white" />
+              <SiEthereum
+                size={70}
+                className="text-white hover:text-purple-500 hover:scale-125 transition ease-in-out duration-100"
+              />
             </li>
             <li>
-              <SiPolygon size={70} className="text-white" />
+              <SiPolygon
+                size={70}
+                className="text-white  hover:text-purple-500 hover:scale-125 transition ease-in-out duration-100"
+              />
             </li>
           </ul>
         </div>
+        <div className="p-12 lg:p-0"></div>
       </section>
     </div>
   );

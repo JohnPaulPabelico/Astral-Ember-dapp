@@ -22,9 +22,9 @@ const NavBar: React.FC = () => {
 
   return (
     <div
-      className={`flex items-center lg:fixed fixed top-0 w-full shadow px-5 min-h-30 justify-between z-10 transition py-3 ${
+      className={`flex items-center lg:fixed fixed top-0 w-full  px-5 min-h-30 justify-between z-10 transition py-3 ${
         barState ? "bg-slate-950" : "bg-slate-950/70"
-      } ${isTop ? "" : "backdrop-blur-sm"}`}
+      } ${isTop ? "bg-transparent" : "backdrop-blur-sm shadow-lg"}`}
     >
       <div>
         <Image
@@ -50,7 +50,7 @@ const NavBar: React.FC = () => {
         >
           <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
-              className={`lg:ml-8 lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-slate-300 text-white transition duration-200 `}
+              className={`lg:ml-8 lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-purple-400 text-white transition duration-200 `}
               href="#home"
               onClick={() => {
                 setBarState(false);
@@ -62,7 +62,7 @@ const NavBar: React.FC = () => {
           </li>
           <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
-              className={` lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-blue-500 text-white transition duration-200 `}
+              className={` lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-purple-400 text-white transition duration-200 `}
               href="#about"
               onClick={() => {
                 setBarState(false);
@@ -74,7 +74,7 @@ const NavBar: React.FC = () => {
           </li>
           <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
-              className={` lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-blue-500 text-white transition duration-200`}
+              className={` lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-purple-400 text-white transition duration-200`}
               href="#explore"
               onClick={() => {
                 setBarState(false);
@@ -86,7 +86,7 @@ const NavBar: React.FC = () => {
           </li>
           <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
-              className={` lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-blue-500 text-white transition duration-200`}
+              className={` lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:text-purple-400 text-white transition duration-200`}
               href="#contact"
               onClick={() => {
                 setBarState(false);
