@@ -6,7 +6,7 @@ import Background from "../public/explorebg.png";
 import { Reveal } from "./Animations/Reveal";
 import Carousel from "./Carousel";
 
-const partnerslides = ["/partners/partner1.webp", "/partners/partner2.webp"];
+const partnerslides = ["/partners/partner1.png", "/partners/partner2.png"];
 function Explore() {
   return (
     <div>

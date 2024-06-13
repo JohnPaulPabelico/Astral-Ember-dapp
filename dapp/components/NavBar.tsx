@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { FaBars } from "react-icons/fa";
 import { GrClose } from "react-icons/gr";
 
