@@ -9,8 +9,8 @@ function About() {
       {" "}
       <section id="about" className={`transition min-h-dvh bg-slate-900`}>
         <div className="p-20"></div>
-        <div className="flex justify-center  items-center h-full">
-          <div className="text-center text-5xl space font-bold space flex justify-center text-white items-center">
+        <div className="flex justify-center items-center h-full lg:px-0 px-10">
+          <div className="text-center text-5xl space font-bold space  flex justify-center text-white items-center ">
             ABOUT THE GUILD
           </div>
         </div>
