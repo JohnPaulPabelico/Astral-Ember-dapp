@@ -37,16 +37,26 @@ function Hero() {
               </div>
             </div>
             <div className="lg:max-w-lg "></div>
-            <span className="flex justify-center text-4xl mt-8">
-              <Link
-                href="https://discord.gg/astralember"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:bg-purple-700 p-5 rounded-full bg-purple-600 text-white transition duration-300 space "
-              >
-                Join the Guild
-              </Link>
-            </span>
+            <div className="flex justify-center items-center gap-10">
+              <span className="flex justify-center text-3xl mt-8">
+                <Link
+                  href="https://discord.gg/astralember"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:bg-purple-700 p-5 rounded-3xl bg-purple-600 text-white transition duration-300 space "
+                >
+                  Join the Guild
+                </Link>
+              </span>
+              <span className="flex justify-center text-3xl mt-8">
+                <Link
+                  href="#contact"
+                  className="hover:bg-purple-700 p-5 rounded-3xl bg-purple-600 text-white transition duration-300 space "
+                >
+                  Partner with us
+                </Link>
+              </span>
+            </div>
           </div>
         </div>
       </section>
