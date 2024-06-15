@@ -37,7 +37,7 @@ function Hero() {
               </div>
             </div>
             <div className="lg:max-w-lg "></div>
-            <div className="flex justify-center items-center gap-10">
+            <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-10 gap-5">
               <span className="flex justify-center text-3xl mt-8">
                 <Link
                   href="https://discord.gg/astralember"
@@ -48,7 +48,7 @@ function Hero() {
                   Join the Guild
                 </Link>
               </span>
-              <span className="flex justify-center text-3xl mt-8">
+              <span className="flex justify-center text-3xl lg:mt-8">
                 <Link
                   href="#contact"
                   className="hover:bg-purple-700 p-5 rounded-3xl bg-purple-600 text-white transition duration-300 space "

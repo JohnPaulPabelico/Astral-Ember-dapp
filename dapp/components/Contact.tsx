@@ -21,12 +21,12 @@ function Contact() {
         className={`lg:min-h-80 min-h-96 transition bg-slate-900`}
       >
         <div className="py-6"></div>
-        <div className="flex justify-center">
+        <div className="flex justify-center text-center">
           <h1 className={`text-6xl font-bold space text-white`}>
             WANT TO PARTNER?
           </h1>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center text-center">
           <h2 className={`text-lg tracking-widest font-bold space `}>
             CONTACT US
           </h2>
@@ -76,6 +76,7 @@ function Contact() {
             </div>
           </div>
         </div>
+        <div className="p-5"></div>
       </section>
     </div>
   );
