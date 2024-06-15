@@ -97,7 +97,7 @@ const NavBar: React.FC = () => {
           </li>
           <li className={`${barState ? "block" : "invisible lg:visible"}`}>
             <Link
-              className={`ml-5 lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:scale-50 text-white transition duration-200 px-5 py-1 hover:bg-purple-700 bg-purple-500 lg:mr-10`}
+              className={`lg:ml-5 lg:text-xl text-3xl  space font-bold rounded-full m-2 hover:scale-50 text-white transition duration-200 px-5 py-1 hover:bg-purple-700 bg-purple-500 lg:mr-10`}
               href="https://discord.gg/astralember"
               target="_blank"
               rel="noopener noreferrer"
